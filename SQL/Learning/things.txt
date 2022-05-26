@@ -1,0 +1,41 @@
+CREATE DATABASE if not exists tester2;
+
+USE tester2;
+
+CREATE TABLE testing(
+	id INT PRIMARY KEY auto_increment,
+	`name` varchar(50) not null,
+    email varchar(255) unique,
+    drink varchar(30) default 'water'
+    );
+    
+    INSERT INTO testing(`name`, email, drink) VALUES ('Aditya', 'ap@gmail.com','fanta')
+    
+
+
+
+
+222222222222222222
+
+
+USE gameshopdbthree;
+
+CREATE TABLE customers (
+	customer_id INT auto_increment,
+    first_name varchar(50) NOT NULL unique,
+    surname varchar(50),
+    PRIMARY KEY (customer_id)
+);
+
+CREATE TABLE orders (
+	order_id INT auto_increment,
+    order_date DATETIME	NOT NULL,
+    fk_customer_id INT NOT NULL,
+    primary key (order_id),
+    foreign key (fk_customer_id) references customers(customer_id),
+);
+    
+
+Create 3 tables, customers, products and orders, your customer table needs a primary key, your product table needs a primary key, and your orders needs a primary key, and TWO foreign keys
+    
+    

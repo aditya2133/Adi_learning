@@ -1,0 +1,320 @@
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ git clone git@github.com:aditya2133/GitPuns.git
+Cloning into 'GitPuns'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd GitPuns
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git rm -rf GitPuns
+fatal: pathspec 'GitPuns' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git checkout -b developerAdi
+Switched to a new branch 'developerAdi'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (developerAdi)
+$ git checkout -b Adifeature-1
+Switched to a new branch 'Adifeature-1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Adifeature-1)
+$ git checkout developerAdi
+Switched to branch 'developerAdi'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (developerAdi)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git --delete developerAdi
+unknown option: --delete
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git --delete --branch developerAdi
+unknown option: --delete
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git branch -d developerAdi
+Deleted branch developerAdi (was c5b1dcd).
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ ls
+file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git checkout -b Developer
+Switched to a new branch 'Developer'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git checkout -b Feature1
+Switched to a new branch 'Feature1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git checkout Developer
+Switched to branch 'Developer'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git branch Feature2
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git branch
+  Adifeature-1
+* Developer
+  Feature1
+  Feature2
+  main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git branch -d Adifeature-1
+Deleted branch Adifeature-1 (was c5b1dcd).
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git branch
+* Developer
+  Feature1
+  Feature2
+  main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ touch Adipun1.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ ls
+Adipun1.txt  file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git status
+On branch Developer
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Adipun1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ touch -d Adipun1.txt
+touch: invalid date format ‘Adipun1.txt’
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm -rf Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm -f Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ ls
+Adipun1.txt  file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git checkout Feature1
+Switched to branch 'Feature1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ touch Adipun1.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ touch Adipun2.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ touch file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git checkout Feature2
+Switched to branch 'Feature2'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ touch file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ git add file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ echo "Sexy and I know Git" >>file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ git add file.txt
+warning: LF will be replaced by CRLF in file.txt.
+The file will have its original line endings in your working directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ git checkout Feature1
+Switched to branch 'Feature1'
+A       file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git checkout Feature2
+Switched to branch 'Feature2'
+A       file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ git commit -m "2nd Pun added"
+[Feature2 f41ef5b] 2nd Pun added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+gi
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature2)
+$ git checkout Feature1
+Switched to branch 'Feature1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ ls
+Adipun1.txt  Adipun2.txt  file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ echo "I Don't know how she does Git" >>file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ ls
+Adipun1.txt  Adipun2.txt  file.py  file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git rm -rf Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git add file.txt
+warning: LF will be replaced by CRLF in file.txt.
+The file will have its original line endings in your working directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git commit -m "1st pun added"
+[Feature1 8b960de] 1st pun added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Feature1)
+$ git checkout Developer
+Switched to branch 'Developer'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ ls
+Adipun1.txt  Adipun2.txt  file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm Adipun1
+fatal: pathspec 'Adipun1' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git rm Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (Developer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git rm Adipun1.txt
+fatal: pathspec 'Adipun1.txt' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git remote -v
+origin  git@github.com:aditya2133/GitPuns.git (fetch)
+origin  git@github.com:aditya2133/GitPuns.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git remote add upstream git@github.com:Ridwan-Kawsar/GitPuns.git
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git remote -v
+origin  git@github.com:aditya2133/GitPuns.git (fetch)
+origin  git@github.com:aditya2133/GitPuns.git (push)
+upstream        git@github.com:Ridwan-Kawsar/GitPuns.git (fetch)
+upstream        git@github.com:Ridwan-Kawsar/GitPuns.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git config user.name
+aditya2133
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git log
+commit c5b1dcd3bb05bf700dc50f3cc2edb9f6619fc062 (HEAD -> main, origin/main, origin/HEAD, Developer)
+Author: Ridwan-Kawsar <ridwan_kawsar@hotmail.co.uk>
+Date:   Wed May 11 15:39:28 2022 +0100
+
+    Added file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git log --online
+fatal: unrecognized argument: --online
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git log --oneline
+c5b1dcd (HEAD -> main, origin/main, origin/HEAD, Developer) Added file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git push -u origin Developer
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Developer' on GitHub by visiting:
+remote:      https://github.com/aditya2133/GitPuns/pull/new/Developer
+remote:
+To github.com:aditya2133/GitPuns.git
+ * [new branch]      Developer -> Developer
+branch 'Developer' set up to track 'origin/Developer'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git push -u origin Feature1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 73.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Feature1' on GitHub by visiting:
+remote:      https://github.com/aditya2133/GitPuns/pull/new/Feature1
+remote:
+To github.com:aditya2133/GitPuns.git
+ * [new branch]      Feature1 -> Feature1
+branch 'Feature1' set up to track 'origin/Feature1'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$ git push -u origin Feature2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 96.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Feature2' on GitHub by visiting:
+remote:      https://github.com/aditya2133/GitPuns/pull/new/Feature2
+remote:
+To github.com:aditya2133/GitPuns.git
+ * [new branch]      Feature2 -> Feature2
+branch 'Feature2' set up to track 'origin/Feature2'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/GitPuns (main)
+$

@@ -1,0 +1,560 @@
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git
+$ ^C
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git
+$ cd ~
+
+User@DESKTOP-8662KB1 MINGW64 ~
+$ cd /c/ADI/Adi stuff/JOBS WORK/QA/learning/git
+bash: cd: too many arguments
+
+User@DESKTOP-8662KB1 MINGW64 ~
+$ cd "/c/ADI/Adi stuff/JOBS WORK/QA/learning/git"
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git
+$ git clone git@github.com:aditya2133/22MayEnable2-Test-Repo.git
+Cloning into '22MayEnable2-Test-Repo'...
+warning: You appear to have cloned an empty repository.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git
+$ mkdir 22MayEnable2-New-Repo/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git
+$ cd ..
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning
+$ cd 22MayEnable2-Test-Repo/
+bash: cd: 22MayEnable2-Test-Repo/: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning
+$ cd 22MayEnable2-Test-Repo
+bash: cd: 22MayEnable2-Test-Repo: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning
+$ git init
+Initialized empty Git repository in C:/ADI/Adi stuff/JOBS WORK/QA/learning/.git/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning (main)
+$ ls
+git/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning (main)
+$ ls
+git/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning (main)
+$ cd "git/"
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd 22MayEnable2-New_Repo/
+bash: cd: 22MayEnable2-New_Repo/: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd 22MayEnable2-New_Repo
+bash: cd: 22MayEnable2-New_Repo: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ ls
+22MayEnable2-New-Repo/  22MayEnable2-Test-Repo/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd ^C
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd 22MayEnable2-New-Repo
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git init
+Initialized empty Git repository in C:/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/.g
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ cd git
+bash: cd: git: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ cd git/
+bash: cd: git/: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ cd ..
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (maigit afn)
+$ cd 22MayEnable2-New-Repo
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git remote -v
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git remote add origin git@github.com:aditya2133/22MayEnable2-Test-Repo.git
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git remote -v
+origin  git@github.com:aditya2133/22MayEnable2-Test-Repo.git (fetch)
+origin  git@github.com:aditya2133/22MayEnable2-Test-Repo.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ touch file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add --all
+hint: core.useBuiltinFSMonitor=true is deprecated;please set core.fsmonitor=true instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git config --global core.fsmonitor true
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add --all
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file.txt
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git commit -m "initial commit"
+[main (root-commit) ae3e5d9] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 210 bytes | 210.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:aditya2133/22MayEnable2-Test-Repo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git config init.defaultBranch
+main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ touch .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ touch .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ touch file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.py
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ mkdir ignoreme
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ cd ignoreme
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ../.gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../.gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme
+$ touch a1
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme
+$ touch a2.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme
+$ touch a3.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme
+$ cd ..
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ cd ignoreme
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ../.gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme (main)
+$ ls
+a1  a2.txt  a3.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme (main)
+$ touch file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme (main)
+$ touch file.js
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme (main)
+$ touch file. css
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo/ignoreme (main)
+$ cd ..
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.py
+        ignoreme/
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add --all
+error: open("ignoreme/file."): No such file or directory
+error: unable to index file 'ignoreme/file.'
+fatal: adding files failed
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignoreme
+fatal: pathspec '.gitignoreme' did not match any files
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.py
+        ignoreme/
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.py
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ touch file.py
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file.py
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git restore --staged .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git add .gitignore
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls
+file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ls -a
+./  ../  .git/  .gitignore  file.py  file.txt  ignoreme/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$ ^C
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnable2-New-Repo (main)
+$

@@ -1,0 +1,208 @@
+er@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ mkdir 22MayEnableTutBranch1
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd 22May
+22MayEnable2-New-Repo/  22MayEnableTutBranch1/  22MayGitTutorial1/
+22MayEnable2-Test-Repo/ 22MayForkTut1/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd 22MayEnableTutBranch1
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1 (main)
+$ git clone https://github.com/QACTrainers/git-branching.git
+Cloning into 'git-branching'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1 (main)
+$ cd ./git-branching
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch
+
+* main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch develop
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch
+  develop
+* main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git checkout develop
+Switched to branch 'develop'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git branch -b issue-1
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git checkout -b issue-1
+Switched to a new branch 'issue-1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (issue-1)
+$ git checkout
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (issue-1)
+$ git checkout develop
+Switched to branch 'develop'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git branch -issue-1
+error: unknown switch `s'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --recurse-submodules  recurse through submodules
+    --format <format>     format to use for the output
+
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git branch -d issue-1
+Deleted branch issue-1 (was 077544d).
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch -d develop
+Deleted branch develop (was 077544d).
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git checkout -b develop
+Switched to a new branch 'develop'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git checkout -b issue-1
+Switched to a new branch 'issue-1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (issue-1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch -d develop issue-1
+Deleted branch develop (was 077544d).
+Deleted branch issue-1 (was 077544d).
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch develop issut-1
+fatal: not a valid object name: 'issut-1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git branch develop issue-1
+fatal: not a valid object name: 'issue-1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (main)
+$ git checkout -b develop
+Switched to a new branch 'develop'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (develop)
+$ git checkout -b issue-1
+Switched to a new branch 'issue-1'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (issue-1)
+$ git branch
+  develop
+* issue-1
+  main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayEnableTutBranch1/git-branching (issue-1)
+$

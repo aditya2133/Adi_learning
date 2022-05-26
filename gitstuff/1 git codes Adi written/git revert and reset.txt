@@ -1,0 +1,138 @@
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ mkdir tmp
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd tmp
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git init
+Initialized empty Git repository in C:/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp/.git/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ touch test.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git add test.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git commit -m "initial commit"
+[main (root-commit) 39cac2f] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ touch test2.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git add test2.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git commit -m "Committing 2nd file"
+[main a3d3291] Committing 2nd file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ touch test3.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git add test3.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git commit -m "committed 3rd file"
+[main 06ad908] committed 3rd file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test3.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ touch test4.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git add test4.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git commit -m "committed 4th file"
+[main afa36ad] committed 4th file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test4.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ touch test5.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git add test5.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git commit -m "committed 5th file"
+[main c39be56] committed 5th file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ touch test6.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git add test6.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git commit -m "committed 6th file"
+[main f323e9c] committed 6th file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test6.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git log --oneline
+f323e9c (HEAD -> main) committed 6th file
+c39be56 committed 5th file
+afa36ad committed 4th file
+06ad908 committed 3rd file
+a3d3291 Committing 2nd file
+39cac2f initial commit
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git revert HEAD
+hint: Waiting for your editor to close the file... unix2dos: converting file C:/ADI/Adi stuff
+dos2unix: converting file C:/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp/.git/COMMIT_EDITMSG
+[main 2750188] Revert "committed 6th file"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test6.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git log --oneline
+2750188 (HEAD -> main) Revert "committed 6th file"
+f323e9c committed 6th file
+c39be56 committed 5th file
+afa36ad committed 4th file
+06ad908 committed 3rd file
+a3d3291 Committing 2nd file
+39cac2f initial commit
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ ls
+test.txt  test2.txt  test3.txt  test4.txt  test5.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git reset ^C
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git reset --hard 39cac2f
+HEAD is now at 39cac2f initial commit
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ ls
+test.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git log
+commit 39cac2f4599243f3960bfa81776c2c310f2f6485 (HEAD -> main)
+Author: aditya2133 <adi.pande@gmail.com>
+Date:   Wed May 11 13:47:35 2022 +0100
+
+    initial commit
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)
+$ git log --oneline
+39cac2f (HEAD -> main) initial commit
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/tmp (main)

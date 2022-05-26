@@ -1,0 +1,93 @@
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1 (main)
+$ git clone git@github.com:aditya2133/22MayEnable2-FORK.git
+Cloning into '22MayEnable2-FORK'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1 (main)
+$ cd 22MayEnable2-FORK
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote -v
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote -v
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote add upstream git@github.com:aditya2133/22MayEnable2-FORK.git
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote -v
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+upstream        git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+upstream        git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git fetch upstream
+From github.com:aditya2133/22MayEnable2-FORK
+ * [new branch]      main       -> upstream/main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote -v
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+upstream        git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+upstream        git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git merge upstream/main
+Already up to date.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ cat README.me
+cat: README.me: No such file or directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote rm upstream
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote add upstream git@github.com:CGuthrieQA/22MayEnable2-FORK.git
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git fetch upstream
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 303 bytes | 1024 bytes/s, done.
+From github.com:CGuthrieQA/22MayEnable2-FORK
+ * [new branch]      main       -> upstream/main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git merge upstream/main
+Updating 0801d54..7c6848c
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:aditya2133/22MayEnable2-FORK.git
+   0801d54..7c6848c  main -> main
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ git remote -v
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (fetch)
+origin  git@github.com:aditya2133/22MayEnable2-FORK.git (push)
+upstream        git@github.com:CGuthrieQA/22MayEnable2-FORK.git (fetch)
+upstream        git@github.com:CGuthrieQA/22MayEnable2-FORK.git (push)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)
+$ ^C
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/22MayForkTut1/22MayEnable2-FORK (main)

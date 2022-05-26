@@ -1,0 +1,87 @@
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ mkdir git-merge-conflict
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git (main)
+$ cd git-merge-conflict
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git init
+Initialized empty Git repository in C:/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict/.git/
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ touch hello.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ echo "hello world" >> hello.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git help save
+fatal: 'C:/Program Files/Git/mingw64/share/doc/git-doc/gitsave.html': documentation file not found.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git add hello.txt
+warning: LF will be replaced by CRLF in hello.txt.
+The file will have its original line endings in your working directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git commit -m "initial commit"
+[main (root-commit) e83dad8] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git checkout -b new branch
+fatal: 'branch' is not a commit and a branch 'new' cannot be created from it
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git checkout -b new-branch
+Switched to a new branch 'new-branch'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (new-branch)
+$ git add hello.txt
+warning: LF will be replaced by CRLF in hello.txt.
+The file will have its original line endings in your working directory
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (new-branch)
+$ git commit -m "made a change to hello.txt file"
+[new-branch 2c4bcfd] made a change to hello.txt file
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (new-branch)
+$
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (new-branch)
+$ git checkout main
+Switched to branch 'main'
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git add hello.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git commit -m "modified hello.txt file"
+[main 4997571] modified hello.txt file
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git merge new-branch
+Auto-merging hello.txt
+CONFLICT (content): Merge conflict in hello.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main|MERGING)
+$ git add hello.txt
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main|MERGING)
+$ git commit -m "resolved merge conflict"
+[main bf0d4b8] resolved merge conflict
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+User@DESKTOP-8662KB1 MINGW64 /c/ADI/Adi stuff/JOBS WORK/QA/learning/git/git-merge-conflict (main)
+$ ^C
+
+User@DESK
