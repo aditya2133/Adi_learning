@@ -1,0 +1,17 @@
+Tasks until the end of the day:
+
+Implement the UserDAO.update() and UserDAO.delete() methods
+
+The easier one to implement is delete(), so it may be good to start with this one.
+
+
+
+If you feel like a challenge:
+
+Create a Todo SQL table
+
+Create Java object for representing Todo objects
+
+Create a TodoDAO with CRUD functionality
+
+You will need to clone this repository for the task:https://github.com/MrWalshyType2/jdbc-example
