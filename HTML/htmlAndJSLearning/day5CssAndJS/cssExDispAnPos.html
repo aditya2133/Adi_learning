@@ -1,0 +1,47 @@
+<html>
+<head>
+   <style>
+    h1 { visibility: hidden;}
+    li{display:inline}
+    strong{display: block;}
+   </style>
+</head>
+<body>
+
+   <h1>This is my shopping list</h1>
+   <ul>
+       <li>Apple</li>
+       <li>Orange</li>
+       <li>Pear</li>
+   </ul>
+   <p>This is a <strong>paragraph</strong>, with some words more <strong>important</strong> than others </p>
+   <p>This is another paragraph.</p>
+
+
+   <script>
+let strictA = true;
+let strictB= 1;
+
+console.log(strictA==strictB);
+console.log(strictA===strictB);
+
+console.log(strictA != strictB);
+console.log(strictA !== strictB);
+///////////////////////////
+let age =27;
+
+if (age>17 && age<66){
+    console.log("within age group");
+ } else if (age <= 17) {
+    console.log("Underage");
+} else {console.log("overage");
+}
+/////////////////////////
+
+let result = age >= 50 ? "50 or over":"under 50";
+console.log(result);
+
+
+   </script>
+</body>
+</html>

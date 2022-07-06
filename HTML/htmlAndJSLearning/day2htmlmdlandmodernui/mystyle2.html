@@ -1,0 +1,97 @@
+<html>
+<head>
+  <style>
+   body {align-content: center}
+   form{margin-left: 30%; margin-right: auto; margin-top: 20%; margin-bottom: auto;}
+   </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body>
+ 
+    <!-- Textfield with Floating Label -->
+
+<form action="#">
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="t_username">
+      <label class="mdl-textfield__label" for="t_username">Enter Username</label>
+    </div>
+  
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="password" id="t_password">
+      <label class="mdl-textfield__label" for="t_password">Enter Password</label>
+    </div>
+  
+
+    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="c_kmsi">
+
+      <input type="checkbox" id="c_kmsi" class="mdl-checkbox__input" checked>
+    
+      <span class="mdl-checkbox__label">Checkbox</span>
+    
+    </label>
+
+
+ <!-- a - for anchoring, helps navigate and refernce pages. ../ takes you up a folder -->
+  <a href= '../blah.html'> Go somewhere else </a>
+
+
+  <!-- Raised button -->
+<button id= "b_sign_in" class="mdl-button mdl-js-button mdl-button--raised">
+    Log In
+  </button>
+
+  <!-- Raised button -->
+<button class="mdl-button mdl-js-button mdl-button--raised" style = "color:red" style= "background-color: blue">
+    Sign Up
+  </button>
+
+</form>
+  
+
+  
+<script>
+  function randomFunction(e){
+    e.preventDefault();
+    window.location.href = '../blah.html';
+  }
+    </script>
+
+
+
+  <script>
+
+    $(document).ready(
+    
+    function() {
+    
+    $('#b_sign_in').click(function(e){
+    
+    e.preventDefault();
+    document.cookie = "name=yogibear";
+    window.location.href = "innerpage/page3.html";
+    alert(document.cookie);
+    });
+    
+    });
+    
+    
+    </script>
+
+    <body>
+
+
+
+
+
+
+
+</html>

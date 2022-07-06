@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+        <script>
+            var data = {
+    "name": "Pikachu",
+    "age": 102,
+    "money": "$1",
+    "loc" : {"latitude" : 34.5555, "longitude":149.3332},
+    "isHungry": true
+    }
+// alert (data.loc.latitude);
+
+const allData = JSON.stringify(data);
+const myJSON = JSON.stringify(data.loc);
+alert (myJSON);
+// alert(data.isHungry);
+
+    document.cookie = allData;
+    window.location.href = "file2.html"
+
+        </script>
+    </head>
+
+    <body>
+
+
+    </body>
+
+
+<html>
